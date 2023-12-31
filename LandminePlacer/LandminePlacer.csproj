@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Description>A Lethal Company mod that add a new item for placing mine</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <Product>Landmine Placer</Product>
+        <Authors>alexandre v1</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
+        <PackageReference Include="BepInEx.BaseLib" Version="5.4.20" />
+        <PackageReference Include="BepInEx.Core" Version="5.*" />
+        <PackageReference Include="LethalCompanyGameLibs" Version="45.0.0" />
+        <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="LethalLib">
+        <HintPath>..\..\..\..\..\Downloads\Evaisa-LethalLib-0.9.0\plugins\LethalLib\LethalLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
