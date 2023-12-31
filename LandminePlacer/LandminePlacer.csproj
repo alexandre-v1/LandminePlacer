@@ -23,8 +23,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="lib\" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Reference Include="LethalLib">
-        <HintPath>..\..\..\..\..\Downloads\Evaisa-LethalLib-0.9.0\plugins\LethalLib\LethalLib.dll</HintPath>
+        <HintPath>lib\LethalLib.dll</HintPath>
       </Reference>
     </ItemGroup>
 </Project>
