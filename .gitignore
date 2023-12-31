@@ -75,3 +75,6 @@ crashlytics-build.properties
 LandminePlacer/bin/
 LandminePlacer/obj/
 
+# ignore the library folder
+LandminePlacer/lib/*
+
