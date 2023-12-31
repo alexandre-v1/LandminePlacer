@@ -71,5 +71,7 @@ crashlytics-build.properties
 # Rider generated files
 .idea/
 
-# build files
+# generated projets files
 LandminePlacer/bin/
+LandminePlacer/obj/
+
