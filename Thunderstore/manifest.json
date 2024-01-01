@@ -1,8 +1,8 @@
 {
     "name": "LandMinePlacer",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/alexandre-v1/LandminePlacer",
     "author": "alexandre_v1",
     "description": "Add a new item for placing landmine in Lethal Company",
-    "dependencies": ["Evaisa-LethalLib-0.9.0"]
+    "dependencies": ["Evaisa-LethalLib-0.10.0"]
 }
