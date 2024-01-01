@@ -91,7 +91,12 @@ namespace LandminePlacer
             NetworkPrefabs.RegisterNetworkPrefab(placeableLandmineItem.spawnPrefab);
             
             var itemRarity = global::LandminePlacer.Config.LandminePlacerSpawnChance.Value;
+            Items.RegisterItem(placeableLandmineItem);
             Items.RegisterScrap(placeableLandmineItem, itemRarity, Levels.LevelTypes.All);
+            if (global::LandminePlacer.Config.LandminePlacerInShop.Value)
+            {
+                Items.RegisterShopItem(placeableLandmineItem, global::LandminePlacer.Config.LandminePlacerShopPrice.Value);
+            }
         }
         
         
