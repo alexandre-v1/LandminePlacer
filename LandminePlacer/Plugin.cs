@@ -105,21 +105,16 @@ namespace LandminePlacer
         {
             if (_landmine != null)
                 return _landmine;
-            var spawnableMapObjects = RoundManager.Instance.spawnableMapObjects;
+            var spawnableMapObjects = RoundManager.Instance.currentLevel.spawnableMapObjects;
             if (spawnableMapObjects.Length == 0)
                 return null;
-            RoundManager.Instance.spawnableMapObjects = spawnableMapObjects;
+
             foreach (var spawnableMapObject in spawnableMapObjects)
             {
                 if (spawnableMapObject.prefabToSpawn.GetComponentInChildren<Landmine>() != null)
                 {
                     _landmine = spawnableMapObject.prefabToSpawn;
                     return _landmine;
-                }
-                else
-                {
-                    Log.LogError( $"Could not find default landmine prefab");
-                    return null;
                 }
             }
             Log.LogError( $"Could not find default landmine prefab");
