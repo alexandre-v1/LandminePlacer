@@ -1,5 +1,19 @@
 # LandminePlacer
+⚠️ ARCHIVED: This mod is no longer maintained as of November 16, 2024
+
 A lethal company mod that add a new item for placing landmine.
+
+## Archive Notice
+This mod has been archived for the following reasons:
+
+ - The mod is no longer being maintained or updated
+ - No further bug fixes or features will be added
+ - While it may still work with some versions of Lethal Company, compatibility is not guaranteed
+ - For alternative mods, please check the Thunderstore mod database
+
+Known Last Working Version
+
+ - Lethal Company v45
 
 
 ## Mod link
